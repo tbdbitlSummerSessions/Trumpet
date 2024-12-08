@@ -1,14 +1,14 @@
-import { Canvas } from "@react-three/fiber"
-import Experience from "./components/Experience"
-import { BasicAppShell } from "./components/AppShell"
+import AnimationView from "./components/AnimationView"
+import { MantineProvider } from "@mantine/core"
+import { NavbarSection } from "./components/NavBarSection"
+
 
 function App() {
   return (
-    <BasicAppShell>
-      {/* <Canvas camera={{ position: [5, 1.5, 5], fov: 50}} shadows>
-        <Experience/>
-      </Canvas> */}
-    </BasicAppShell>
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+      {/* <AnimationView url='Hip Hop Dancing'/> */}
+      <NavbarSection/>
+    </MantineProvider>
   )
 }
 

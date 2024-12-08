@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
 import { useLoader, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { FBXLoader } from 'three-stdlib'
 
+// eslint-disable-next-line react/prop-types
 function FBXModel({ url }) {
   const [model, setModel] = useState(null)
   const [animation, setAnimation] = useState(null)

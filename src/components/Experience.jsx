@@ -2,7 +2,9 @@ import { OrbitControls } from "@react-three/drei"
 import FBXModel from './FBXModel'
 
 /* eslint-disable react/no-unknown-property */
-const Experience = () => {
+const Experience = (url) => {
+    url = url.url
+    console.log(`Models/${JSON.stringify(url)}.fbx`)
     return (
         <>
             <OrbitControls/>
@@ -16,7 +18,7 @@ const Experience = () => {
                 <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]}/>
             </directionalLight>    
             <group position={[0,  -1, 0]}>
-                <FBXModel url='Models/Hip Hop Dancing.fbx'/>
+                <FBXModel url={`Models/${url}.fbx`}/>
             </group>
             <mesh
                 rotation={[-0.5 * Math.PI, 0, 0]}
