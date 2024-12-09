@@ -16,8 +16,7 @@ const styles = {
     borderRadius: "15px", // Rounded corners (contoured edges)
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Soft shadow
     width: "80%",
-    height: "80%", // Width of the container
-    maxWidth: "500px", // Maximum width to keep it from becoming too large
+    height: "80%", // Width of the container // Maximum width to keep it from becoming too large
     textAlign: "center", // Center the text inside the container
   },
 };
